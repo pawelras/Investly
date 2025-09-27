@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "label": "Total Portfolio",
+    "value": 112567,
+    "growth": 2.5
+  },
+  {
+    "id": 2,
+    "label": "Today's Change",
+    "value": -535,
+    "growth": -8.49
+  },
+  {
+    "id": 3,
+    "label": "Monthly Perform",
+    "value": 3280,
+    "growth": 2.99
+  }
+]
