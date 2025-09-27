@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {
-  LineChart,
+  AreaChart,
+  Area,
   Line,
   XAxis,
   YAxis,
@@ -19,26 +20,37 @@ export default function MarketValueChart() {
   }, []);
 
   return (
-    <>
-      <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={data}>
-          <CartesianGrid
-            stroke="#8b8b8bff"
-            strokeOpacity={0.4}
-            vertical={false}
-          />
+    <ResponsiveContainer width="100%" height={300}>
+      <AreaChart data={data}>
+        <defs>
+          <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#2563eb" stopOpacity={0.4} />
+            <stop offset="95%" stopColor="#2563eb" stopOpacity={0} />
+          </linearGradient>
+        </defs>
 
-          <XAxis dataKey="month" />
-          <YAxis />
-          <Tooltip formatter={(val) => `£${val.toLocaleString()}`} />
-          <Line
-            type="monotone"
-            dataKey="value"
-            stroke="#2563eb"
-            strokeWidth={2}
-          />
-        </LineChart>
-      </ResponsiveContainer>
-    </>
+        <CartesianGrid stroke="#8b8b8bff" strokeOpacity={0.4} vertical={false} />
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip formatter={(val) => `£${val.toLocaleString()}`} />
+
+        {/* Filled area */}
+        <Area
+          type="monotone"
+          dataKey="value"
+          stroke="none"
+          fill="#DCEDF0"
+        />
+
+        {/* Line on top for crisp outline */}
+        <Line
+          type="monotone"
+          dataKey="value"
+          stroke="#002E4D"
+          strokeWidth={2}
+          dot={false}
+        />
+      </AreaChart>
+    </ResponsiveContainer>
   );
 }
