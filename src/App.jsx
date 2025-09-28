@@ -3,7 +3,7 @@ import TopBar from "./Components/Dashboard/TopBar";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import Holdings from "./Components/Holdings/Holdings";
-
+import Transactions from "./Components/Transactions/Transactions";
 function App() {
   return (
     <>
@@ -17,8 +17,8 @@ function App() {
           <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/holdings" element={<Holdings />} />
-        {/* <Route path="/accounts" element={<Accounts />} />
-        <Route path="/transactions" element={<Transactions />} /> */}
+        {/* <Route path="/accounts" element={<Accounts />} /> */}
+        <Route path="/transactions" element={<Transactions />} />
       </Routes>
           
         

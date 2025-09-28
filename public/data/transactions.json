@@ -1,52 +1,722 @@
 [
   {
     "id": 1,
-    "date": "2025-09-20",
-    "asset": "AAPL",
-    "type": "Buy",
-    "quantity": 50,
-    "price": 189.25,
-    "amount": 9462.50,
-    "account": "Retirement Fund"
+    "date": "2025-01-30",
+    "asset": "AMZN",
+    "type": "Sell",
+    "quantity": 293,
+    "price": 227.47,
+    "amount": 66648.71,
+    "account": "Trading Account"
   },
   {
     "id": 2,
-    "date": "2025-09-21",
-    "asset": "TSLA",
+    "date": "2025-01-07",
+    "asset": "NVDA",
     "type": "Sell",
-    "quantity": 10,
-    "price": 254.60,
-    "amount": 2546.00,
-    "account": "Trading Account"
+    "quantity": 124,
+    "price": 408.76,
+    "amount": 50686.24,
+    "account": "Growth Portfolio"
   },
   {
     "id": 3,
-    "date": "2025-09-22",
-    "asset": "AMZN",
-    "type": "Buy",
-    "quantity": 5,
-    "price": 127.40,
-    "amount": 637.00,
-    "account": "Retirement Fund"
+    "date": "2025-01-12",
+    "asset": "MSFT",
+    "type": "Sell",
+    "quantity": 15,
+    "price": 130.12,
+    "amount": 1951.8,
+    "account": "Income Portfolio"
   },
   {
     "id": 4,
-    "date": "2025-09-23",
-    "asset": "UK Bonds",
+    "date": "2025-01-02",
+    "asset": "AAPL",
     "type": "Buy",
-    "quantity": 200,
-    "price": 100.00,
-    "amount": 20000.00,
-    "account": "Trading Account"
+    "quantity": 45,
+    "price": 99.66,
+    "amount": 4484.7,
+    "account": "Global Equity Fund"
   },
   {
     "id": 5,
-    "date": "2025-09-24",
+    "date": "2025-01-04",
+    "asset": "AMZN",
+    "type": "Dividend",
+    "quantity": 487,
+    "price": 1.55,
+    "amount": 754.85,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 6,
+    "date": "2025-01-11",
+    "asset": "MSFT",
+    "type": "Sell",
+    "quantity": 141,
+    "price": 313.84,
+    "amount": 44251.44,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 7,
+    "date": "2025-01-03",
+    "asset": "AMZN",
+    "type": "Dividend",
+    "quantity": 485,
+    "price": 0.86,
+    "amount": 417.1,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 8,
+    "date": "2025-01-12",
+    "asset": "GOOGL",
+    "type": "Buy",
+    "quantity": 239,
+    "price": 308.68,
+    "amount": 73774.52,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 9,
+    "date": "2025-02-01",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 53,
+    "price": 485.99,
+    "amount": 25757.47,
+    "account": "Trading Account"
+  },
+  {
+    "id": 10,
+    "date": "2025-02-11",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 298,
+    "price": 350.74,
+    "amount": 104520.52,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 11,
+    "date": "2025-02-16",
+    "asset": "AMZN",
+    "type": "Sell",
+    "quantity": 247,
+    "price": 467.67,
+    "amount": 115514.49,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 12,
+    "date": "2025-02-16",
+    "asset": "NVDA",
+    "type": "Dividend",
+    "quantity": 110,
+    "price": 1.75,
+    "amount": 192.5,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 13,
+    "date": "2025-02-28",
+    "asset": "GOOGL",
+    "type": "Sell",
+    "quantity": 49,
+    "price": 414.74,
+    "amount": 20322.26,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 14,
+    "date": "2025-02-19",
+    "asset": "NVDA",
+    "type": "Buy",
+    "quantity": 248,
+    "price": 252.73,
+    "amount": 62677.04,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 15,
+    "date": "2025-02-11",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 278,
+    "price": 90.51,
+    "amount": 25161.78,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 16,
+    "date": "2025-02-07",
+    "asset": "GOOGL",
+    "type": "Buy",
+    "quantity": 182,
+    "price": 451.13,
+    "amount": 82105.66,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 17,
+    "date": "2025-03-27",
     "asset": "MSFT",
     "type": "Dividend",
+    "quantity": 402,
+    "price": 1.88,
+    "amount": 755.76,
+    "account": "Trading Account"
+  },
+  {
+    "id": 18,
+    "date": "2025-03-13",
+    "asset": "GOOGL",
+    "type": "Sell",
+    "quantity": 29,
+    "price": 128.03,
+    "amount": 3712.87,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 19,
+    "date": "2025-03-15",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 222,
+    "price": 141.56,
+    "amount": 31426.32,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 20,
+    "date": "2025-03-17",
+    "asset": "TSLA",
+    "type": "Buy",
+    "quantity": 11,
+    "price": 444.02,
+    "amount": 4884.22,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 21,
+    "date": "2025-03-22",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 105,
+    "price": 494.83,
+    "amount": 51957.15,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 22,
+    "date": "2025-03-09",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 229,
+    "price": 204.73,
+    "amount": 46883.17,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 23,
+    "date": "2025-03-11",
+    "asset": "NVDA",
+    "type": "Buy",
+    "quantity": 90,
+    "price": 135.25,
+    "amount": 12172.5,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 24,
+    "date": "2025-03-09",
+    "asset": "AAPL",
+    "type": "Dividend",
+    "quantity": 423,
+    "price": 1.52,
+    "amount": 642.96,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 25,
+    "date": "2025-04-18",
+    "asset": "AAPL",
+    "type": "Sell",
+    "quantity": 243,
+    "price": 292.77,
+    "amount": 71143.11,
+    "account": "Trading Account"
+  },
+  {
+    "id": 26,
+    "date": "2025-04-20",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 214,
+    "price": 62.8,
+    "amount": 13439.2,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 27,
+    "date": "2025-04-03",
+    "asset": "AMZN",
+    "type": "Dividend",
+    "quantity": 304,
+    "price": 2.43,
+    "amount": 738.72,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 28,
+    "date": "2025-04-01",
+    "asset": "TSLA",
+    "type": "Dividend",
     "quantity": 100,
-    "price": 2.15,
-    "amount": 215.00,
+    "price": 2.48,
+    "amount": 248.0,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 29,
+    "date": "2025-04-12",
+    "asset": "NVDA",
+    "type": "Dividend",
+    "quantity": 433,
+    "price": 0.64,
+    "amount": 277.12,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 30,
+    "date": "2025-04-16",
+    "asset": "GOOGL",
+    "type": "Dividend",
+    "quantity": 305,
+    "price": 1.38,
+    "amount": 420.9,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 31,
+    "date": "2025-04-22",
+    "asset": "NVDA",
+    "type": "Sell",
+    "quantity": 148,
+    "price": 5.64,
+    "amount": 834.72,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 32,
+    "date": "2025-04-15",
+    "asset": "NVDA",
+    "type": "Dividend",
+    "quantity": 173,
+    "price": 1.78,
+    "amount": 307.94,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 33,
+    "date": "2025-05-18",
+    "asset": "AMZN",
+    "type": "Sell",
+    "quantity": 109,
+    "price": 30.96,
+    "amount": 3374.64,
+    "account": "Trading Account"
+  },
+  {
+    "id": 34,
+    "date": "2025-05-30",
+    "asset": "TSLA",
+    "type": "Dividend",
+    "quantity": 424,
+    "price": 2.18,
+    "amount": 924.32,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 35,
+    "date": "2025-05-23",
+    "asset": "TSLA",
+    "type": "Dividend",
+    "quantity": 101,
+    "price": 0.66,
+    "amount": 66.66,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 36,
+    "date": "2025-05-26",
+    "asset": "UK Bonds",
+    "type": "Dividend",
+    "quantity": 209,
+    "price": 1.33,
+    "amount": 277.97,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 37,
+    "date": "2025-05-17",
+    "asset": "MSFT",
+    "type": "Sell",
+    "quantity": 58,
+    "price": 31.89,
+    "amount": 1849.62,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 38,
+    "date": "2025-05-03",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 239,
+    "price": 290.05,
+    "amount": 69321.95,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 39,
+    "date": "2025-05-18",
+    "asset": "UK Bonds",
+    "type": "Dividend",
+    "quantity": 240,
+    "price": 2.41,
+    "amount": 578.4,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 40,
+    "date": "2025-05-14",
+    "asset": "UK Bonds",
+    "type": "Sell",
+    "quantity": 15,
+    "price": 212.99,
+    "amount": 3194.85,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 41,
+    "date": "2025-06-03",
+    "asset": "GOOGL",
+    "type": "Dividend",
+    "quantity": 495,
+    "price": 1.23,
+    "amount": 608.85,
+    "account": "Trading Account"
+  },
+  {
+    "id": 42,
+    "date": "2025-06-29",
+    "asset": "AAPL",
+    "type": "Dividend",
+    "quantity": 172,
+    "price": 0.82,
+    "amount": 141.04,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 43,
+    "date": "2025-06-26",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 8,
+    "price": 114.3,
+    "amount": 914.4,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 44,
+    "date": "2025-06-25",
+    "asset": "UK Bonds",
+    "type": "Buy",
+    "quantity": 171,
+    "price": 316.91,
+    "amount": 54191.61,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 45,
+    "date": "2025-06-26",
+    "asset": "MSFT",
+    "type": "Buy",
+    "quantity": 9,
+    "price": 62.72,
+    "amount": 564.48,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 46,
+    "date": "2025-06-11",
+    "asset": "TSLA",
+    "type": "Dividend",
+    "quantity": 275,
+    "price": 2.11,
+    "amount": 580.25,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 47,
+    "date": "2025-06-20",
+    "asset": "UK Bonds",
+    "type": "Sell",
+    "quantity": 3,
+    "price": 189.74,
+    "amount": 569.22,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 48,
+    "date": "2025-06-26",
+    "asset": "NVDA",
+    "type": "Buy",
+    "quantity": 215,
+    "price": 203.77,
+    "amount": 43810.55,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 49,
+    "date": "2025-07-15",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 66,
+    "price": 494.09,
+    "amount": 32609.94,
+    "account": "Trading Account"
+  },
+  {
+    "id": 50,
+    "date": "2025-07-02",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 226,
+    "price": 259.98,
+    "amount": 58755.48,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 51,
+    "date": "2025-07-14",
+    "asset": "AMZN",
+    "type": "Dividend",
+    "quantity": 136,
+    "price": 0.83,
+    "amount": 112.88,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 52,
+    "date": "2025-07-19",
+    "asset": "GOOGL",
+    "type": "Buy",
+    "quantity": 102,
+    "price": 243.97,
+    "amount": 24884.94,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 53,
+    "date": "2025-07-16",
+    "asset": "TSLA",
+    "type": "Dividend",
+    "quantity": 338,
+    "price": 1.99,
+    "amount": 672.62,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 54,
+    "date": "2025-07-25",
+    "asset": "TSLA",
+    "type": "Sell",
+    "quantity": 297,
+    "price": 388.78,
+    "amount": 115467.66,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 55,
+    "date": "2025-07-26",
+    "asset": "AAPL",
+    "type": "Sell",
+    "quantity": 279,
+    "price": 491.55,
+    "amount": 137142.45,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 56,
+    "date": "2025-07-04",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 289,
+    "price": 437.22,
+    "amount": 126356.58,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 57,
+    "date": "2025-08-04",
+    "asset": "MSFT",
+    "type": "Sell",
+    "quantity": 223,
+    "price": 417.06,
+    "amount": 93004.38,
+    "account": "Trading Account"
+  },
+  {
+    "id": 58,
+    "date": "2025-08-05",
+    "asset": "GOOGL",
+    "type": "Buy",
+    "quantity": 153,
+    "price": 46.15,
+    "amount": 7060.95,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 59,
+    "date": "2025-08-15",
+    "asset": "AAPL",
+    "type": "Dividend",
+    "quantity": 146,
+    "price": 2.5,
+    "amount": 365.0,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 60,
+    "date": "2025-08-29",
+    "asset": "UK Bonds",
+    "type": "Dividend",
+    "quantity": 102,
+    "price": 2.44,
+    "amount": 248.88,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 61,
+    "date": "2025-08-09",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 141,
+    "price": 374.8,
+    "amount": 52846.8,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 62,
+    "date": "2025-08-15",
+    "asset": "MSFT",
+    "type": "Dividend",
+    "quantity": 185,
+    "price": 0.78,
+    "amount": 144.3,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 63,
+    "date": "2025-08-27",
+    "asset": "MSFT",
+    "type": "Sell",
+    "quantity": 159,
+    "price": 60.0,
+    "amount": 9540.0,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 64,
+    "date": "2025-08-11",
+    "asset": "MSFT",
+    "type": "Dividend",
+    "quantity": 392,
+    "price": 1.37,
+    "amount": 537.04,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 65,
+    "date": "2025-09-26",
+    "asset": "GOOGL",
+    "type": "Sell",
+    "quantity": 269,
+    "price": 7.2,
+    "amount": 1936.8,
+    "account": "Trading Account"
+  },
+  {
+    "id": 66,
+    "date": "2025-09-18",
+    "asset": "TSLA",
+    "type": "Buy",
+    "quantity": 40,
+    "price": 221.32,
+    "amount": 8852.8,
+    "account": "Growth Portfolio"
+  },
+  {
+    "id": 67,
+    "date": "2025-09-08",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 31,
+    "price": 302.93,
+    "amount": 9390.83,
+    "account": "Income Portfolio"
+  },
+  {
+    "id": 68,
+    "date": "2025-09-08",
+    "asset": "NVDA",
+    "type": "Buy",
+    "quantity": 228,
+    "price": 238.37,
+    "amount": 54348.36,
+    "account": "Global Equity Fund"
+  },
+  {
+    "id": 69,
+    "date": "2025-09-17",
+    "asset": "GOOGL",
+    "type": "Sell",
+    "quantity": 52,
+    "price": 381.99,
+    "amount": 19863.48,
+    "account": "UK Index Tracker"
+  },
+  {
+    "id": 70,
+    "date": "2025-09-05",
+    "asset": "AMZN",
+    "type": "Sell",
+    "quantity": 170,
+    "price": 362.18,
+    "amount": 61570.6,
+    "account": "Technology Fund"
+  },
+  {
+    "id": 71,
+    "date": "2025-09-23",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 176,
+    "price": 241.11,
+    "amount": 42435.36,
+    "account": "Dividend Reinvestment"
+  },
+  {
+    "id": 72,
+    "date": "2025-09-02",
+    "asset": "MSFT",
+    "type": "Dividend",
+    "quantity": 228,
+    "price": 2.2,
+    "amount": 501.6,
     "account": "Retirement Fund"
   }
 ]

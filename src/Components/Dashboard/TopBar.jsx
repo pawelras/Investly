@@ -18,25 +18,33 @@ export default function TopBar() {
         <div className="flex flex-col md:flex-row md:space-x-6 text-md gap-2 md:gap-0 mt-2 md:mt-0">
           <NavLink
             to="/"
-            className="hover:underline"
+            className={({ isActive }) =>
+              isActive ? "underline font-semibold" : "hover:underline"
+            }
             >
             Dashboard
           </NavLink>
           <NavLink
             to="/holdings"
-            className="hover:underline"
+            className={({ isActive }) =>
+              isActive ? "underline font-semibold" : "hover:underline"
+            }
           >
             Holdings
           </NavLink>
           <NavLink
             to="/accounts"
-            className="hover:underline"
+            className={({ isActive }) =>
+              isActive ? "underline font-semibold" : "hover:underline"
+            }
           >
             Accounts
           </NavLink>
           <NavLink
             to="/transactions"
-            className="hover:underline"
+            className={({ isActive }) =>
+              isActive ? "underline font-semibold" : "hover:underline"
+            }
           >
             Transactions
           </NavLink>

@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "name": "Tesla (TSLA)",
+    "name": "Real Estate",
     "value": 10000,
     "percentage": 10
   },
@@ -37,7 +37,7 @@
   },
   {
     "id": 7,
-    "name": "Johnson & Johnson (JNJ)",
+    "name": "Long Term Bonds",
     "value": 6000,
     "percentage": 6
   },

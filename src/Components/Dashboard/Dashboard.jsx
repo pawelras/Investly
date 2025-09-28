@@ -3,7 +3,7 @@ import ChartCard from "./ChartCard";
 import NewsCard from "./NewsCard";
 import WidgetCard from "./WidgetCard"; // donut chart
 import Kpis from "./Kpis";
-import Transactions from "./Transactions";
+import RecentTransactions from "./RecentTransactions";
 
 const Dashboard = () => {
   return (
@@ -28,7 +28,7 @@ const Dashboard = () => {
         {/* Row 2 left: Transactions */}
         <div className="md:col-span-3 row-span-1 bg-white rounded-lg p-4 shadow">
           
-          <Transactions />
+          <RecentTransactions />
         </div>
 
         {/* Row 2 right: Donut / Widget */}
