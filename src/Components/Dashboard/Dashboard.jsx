@@ -27,6 +27,7 @@ const Dashboard = () => {
 
         {/* Row 2 left: Transactions */}
         <div className="md:col-span-3 row-span-1 bg-white rounded-lg p-4 shadow">
+          
           <Transactions />
         </div>
 

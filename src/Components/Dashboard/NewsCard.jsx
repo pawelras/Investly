@@ -37,7 +37,7 @@ export default function NewsCard() {
   }, []);
 
   return (
-    <div style={{"background-color": "#f9fafb"}} className="rounded-lg p-4 flex flex-col justify-between">
+    <div className="rounded-lg p-4 flex flex-col justify-between">
       <h3 className="text-sm font-semibold mb-4">Top Pick</h3>
 
       {loading && <p className="text-gray-500 text-sm">Loading news…</p>}
