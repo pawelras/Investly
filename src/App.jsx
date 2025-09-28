@@ -8,9 +8,9 @@ function App() {
   return (
     <>
             <div className='h-screen'>
-        <div className='h-full overflow-hidden shadow bg-gray-50 '>
+        <div style={{ "background-color": "#edeff3" }} className='min-h-full overflow-hidden shadow'>
           <TopBar />
-          <div className='bg-light my-10 px-50'>
+          <div className='bg-light my-10 px-5 lg:px-50'>
             <Dashboard />
           </div>
         </div>

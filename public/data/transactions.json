@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "date": "2025-09-20",
+    "asset": "AAPL",
+    "type": "Buy",
+    "quantity": 50,
+    "price": 189.25,
+    "amount": 9462.5,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 2,
+    "date": "2025-09-21",
+    "asset": "TSLA",
+    "type": "Sell",
+    "quantity": 10,
+    "price": 254.6,
+    "amount": 2546.0,
+    "account": "Trading Account"
+  },
+  {
+    "id": 3,
+    "date": "2025-09-22",
+    "asset": "AMZN",
+    "type": "Buy",
+    "quantity": 5,
+    "price": 127.4,
+    "amount": 637.0,
+    "account": "Retirement Fund"
+  },
+  {
+    "id": 4,
+    "date": "2025-09-23",
+    "asset": "UK Bonds",
+    "type": "Buy",
+    "quantity": 200,
+    "price": 100,
+    "amount": 20000,
+    "account": "Trading Account"
+  },
+  {
+    "id": 5,
+    "date": "2025-09-24",
+    "asset": "MSFT",
+    "type": "Dividend",
+    "quantity": 0,
+    "price": 2.15,
+    "amount": 215.0,
+    "account": "Retirement Fund"
+  }
+]

@@ -10,10 +10,10 @@ export default function PortfolioPieChart() {
   ];
 
   // Custom colors for each slice
-  const COLORS = ["#2563eb", "#16a34a", "#f59e0b", "#ef4444"];
+  const COLORS = ["#6B7B8C", "#4F77A3", " #8FD6C8", "#F28B82"];
 
   return (
-    <div className="w-full h-80">
+    <div className="w-full h-80 overflow-visible">
       <ResponsiveContainer>
         <PieChart>
           <Pie
@@ -22,11 +22,17 @@ export default function PortfolioPieChart() {
             nameKey="name"
             cx="50%"
             cy="50%"
+            innerRadius={60}   // 👈 makes it a donut
             outerRadius={100}
-            label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+            label={({ name, percent }) =>
+              `${name} ${(percent * 100).toFixed(0)}%`
+            }
           >
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
             ))}
           </Pie>
 

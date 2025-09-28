@@ -2,7 +2,8 @@
 
 @theme {
   --color-white: #FFFFFF;
-  --color-brand: #002E4D;
+  /* --color-brand: #002E4D; */
+  --color-brand:  #4F77A3;
   --color-brand-light: #DCEDF0;
   --color-brand-dark: #1e3a8a;
   --color-light-gray: #f3f4f6;

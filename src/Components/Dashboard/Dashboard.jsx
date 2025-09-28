@@ -1,25 +1,37 @@
 import StatCard from "./StatCard";
 import ChartCard from "./ChartCard";
 import NewsCard from "./NewsCard";
-import WidgetCard from "./WidgetCard";
+import WidgetCard from "./WidgetCard"; // donut chart
 import Kpis from "./Kpis";
+import Transactions from "./Transactions";
 
 const Dashboard = () => {
   return (
     <div>
       <h1 className="text-4xl font-bold mb-4 text-gray-600">Dashboard</h1>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 h-full">
-        {/* Left side (3/4 width) */}
-        <div className="md:col-span-3 flex flex-col h-full gap-4">
-          <Kpis />
-          <div className="flex-1">
-            <ChartCard />
-          </div>
+
+      {/* KPI row stays outside grid */}
+      <Kpis />
+
+      {/* 2x2 grid for charts and widgets */}
+      <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-full mt-4">
+        {/* Row 1 left: Chart */}
+        <div className="md:col-span-3 row-span-1 bg-white rounded-lg p-4 shadow">
+          <ChartCard />
         </div>
 
-        {/* Right side (1/4 width) */}
-        <div className="flex flex-col gap-4 h-full">
-          <NewsCard className="flex-1" />
+        {/* Row 1 right: News */}
+        <div className="row-span-1 bg-white rounded-lg p-4 shadow">
+          <NewsCard />
+        </div>
+
+        {/* Row 2 left: Transactions */}
+        <div className="md:col-span-3 row-span-1 bg-white rounded-lg p-4 shadow">
+          <Transactions />
+        </div>
+
+        {/* Row 2 right: Donut / Widget */}
+        <div className="row-span-1 bg-white rounded-lg p-4 shadow">
           <WidgetCard />
         </div>
       </div>

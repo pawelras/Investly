@@ -37,7 +37,7 @@ export default function NewsCard() {
   }, []);
 
   return (
-    <div className="border rounded-lg p-4 flex flex-col justify-between">
+    <div style={{"background-color": "#f9fafb"}} className="rounded-lg p-4 flex flex-col justify-between">
       <h3 className="text-sm font-semibold mb-4">Top Pick</h3>
 
       {loading && <p className="text-gray-500 text-sm">Loading news…</p>}
@@ -45,10 +45,7 @@ export default function NewsCard() {
         <p className="text-gray-500 text-sm">No news available</p>
       )}
       {news.length > 0 && <NewsCarousel articles={news} />}
-{/* 
-      <div className="h-24 flex items-center justify-center mt-6">
-        <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-teal-600 to-teal-300"></div>
-      </div> */}
+
     </div>
   );
 }

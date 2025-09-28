@@ -3,10 +3,10 @@ import PortfolioPieChart from "./PortfolioPieChart";
 
 export default function WidgetCard() {
   return (
-    <div className="border rounded-lg p-4">
-      <div className="h-16 bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
+    <div style={{"background-color": "#f9fafb"}}  className="flex-1 rounded-lg p-4 overflow-visible ">
+     
         <PortfolioPieChart />
-      </div>
+     
     </div>
   );
 }
