@@ -14,7 +14,7 @@ export default function PortfolioPieChart() {
 
   return (
     <div className="w-full h-80">
-      <h3>Portfolio Mix</h3>
+      <h3 className="text-sm font-semibold mb-2">Portfolio Mix</h3>
       <ResponsiveContainer >
         <PieChart margin={{ top: 20, bottom: 10 }}>
           <Pie

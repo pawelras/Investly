@@ -58,7 +58,8 @@ export default function Transactions() {
 
   return (
     <>
-    <h2 className="text-lg font-semibold mb-4">Recent Transactions</h2>
+    <div className="mb-4"><h3 className="text-sm font-semibold mb-2">Recent Transactions</h3></div>
+
     <Box sx={{ width: "100%", overflowX: "auto" }}>
       <DataGrid
         rows={rows}
