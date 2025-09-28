@@ -53,7 +53,7 @@ export default function NewsCarousel({ articles }) {
     if (!articles || articles.length === 0) return;
 
     fetch(
-      `https://pixabay.com/api/?key=${PIXABAY_KEY}&q=finance+investment&image_type=photo&orientation=horizontal&per_page=${articles.length}`
+      `https://pixabay.com/api/?key=${PIXABAY_KEY}&q=finance+investment&image_type=photo&orientation=horizontal&per_page=${articles.length}`,
     )
       .then((res) => res.json())
       .then((data) => {

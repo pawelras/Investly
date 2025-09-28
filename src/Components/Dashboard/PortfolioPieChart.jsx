@@ -1,4 +1,11 @@
-import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 export default function PortfolioPieChart() {
   // Sample portfolio breakdown in %
@@ -15,7 +22,7 @@ export default function PortfolioPieChart() {
   return (
     <div className="w-full h-80">
       <h3 className="text-sm font-semibold mb-2">Portfolio Mix</h3>
-      <ResponsiveContainer >
+      <ResponsiveContainer>
         <PieChart margin={{ top: 20, bottom: 10 }}>
           <Pie
             data={data}
@@ -23,9 +30,9 @@ export default function PortfolioPieChart() {
             nameKey="name"
             cx="50%"
             cy="50%"
-            innerRadius={60}   // 👈 donut style
+            innerRadius={60} // 👈 donut style
             outerRadius={100}
-            labelLine={false}  // 👈 no label lines
+            labelLine={false} // 👈 no label lines
             label={({ percent }) => `${(percent * 100).toFixed(0)}%`} // 👈 only % inside
           >
             {data.map((entry, index) => (

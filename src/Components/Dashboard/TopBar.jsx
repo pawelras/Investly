@@ -1,4 +1,5 @@
-import NotificationsPopover from "./NotificationsPopover";  
+import NotificationsPopover from "./NotificationsPopover";
+import { NavLink } from "react-router-dom";
 
 export default function TopBar() {
   return (
@@ -15,10 +16,30 @@ export default function TopBar() {
 
         {/* Navigation */}
         <div className="flex flex-col md:flex-row md:space-x-6 text-md gap-2 md:gap-0 mt-2 md:mt-0">
-          <button className="hover:underline">Dashboard</button>
-          <button className="hover:underline">Holdings</button>
-          <button className="hover:underline">Accounts</button>
-          <button className="hover:underline">Transactions</button>
+          <NavLink
+            to="/"
+            className="hover:underline"
+            >
+            Dashboard
+          </NavLink>
+          <NavLink
+            to="/holdings"
+            className="hover:underline"
+          >
+            Holdings
+          </NavLink>
+          <NavLink
+            to="/accounts"
+            className="hover:underline"
+          >
+            Accounts
+          </NavLink>
+          <NavLink
+            to="/transactions"
+            className="hover:underline"
+          >
+            Transactions
+          </NavLink>
         </div>
       </div>
     </div>

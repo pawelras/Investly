@@ -29,18 +29,17 @@ export default function MarketValueChart() {
           </linearGradient>
         </defs>
 
-        <CartesianGrid stroke="#8b8b8bff" strokeOpacity={0.4} vertical={false} />
+        <CartesianGrid
+          stroke="#8b8b8bff"
+          strokeOpacity={0.4}
+          vertical={false}
+        />
         <XAxis dataKey="month" />
         <YAxis />
         <Tooltip formatter={(val) => `£${val.toLocaleString()}`} />
 
         {/* Filled area */}
-        <Area
-          type="monotone"
-          dataKey="value"
-          stroke="none"
-          fill="#DCEDF0"
-        />
+        <Area type="monotone" dataKey="value" stroke="none" fill="#DCEDF0" />
 
         {/* Line on top for crisp outline */}
         <Line

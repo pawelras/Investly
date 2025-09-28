@@ -30,7 +30,7 @@ export default function Kpis() {
           <StatCard
             key={kpi.id}
             label={kpi.label}
-            value={`$${kpi.value.toLocaleString()}`}
+            value={`£${kpi.value.toLocaleString()}`}
             subtext={`${kpi.growth > 0 ? "+" : ""}${kpi.growth}%`}
             valueClass={growthClass}
           />

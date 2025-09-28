@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Apple (AAPL)",
+    "value": 25000,
+    "percentage": 25
+  },
+  {
+    "id": 2,
+    "name": "Microsoft (MSFT)",
+    "value": 18000,
+    "percentage": 18
+  },
+  {
+    "id": 3,
+    "name": "Amazon (AMZN)",
+    "value": 15000,
+    "percentage": 15
+  },
+  {
+    "id": 4,
+    "name": "Tesla (TSLA)",
+    "value": 10000,
+    "percentage": 10
+  },
+  {
+    "id": 5,
+    "name": "Alphabet (GOOGL)",
+    "value": 9000,
+    "percentage": 9
+  },
+  {
+    "id": 6,
+    "name": "NVIDIA (NVDA)",
+    "value": 8000,
+    "percentage": 8
+  },
+  {
+    "id": 7,
+    "name": "Johnson & Johnson (JNJ)",
+    "value": 6000,
+    "percentage": 6
+  },
+  {
+    "id": 8,
+    "name": "JPMorgan Chase (JPM)",
+    "value": 4000,
+    "percentage": 4
+  },
+  {
+    "id": 9,
+    "name": "Procter & Gamble (PG)",
+    "value": 3000,
+    "percentage": 3
+  },
+  {
+    "id": 10,
+    "name": "Cash",
+    "value": 2000,
+    "percentage": 2
+  }
+]

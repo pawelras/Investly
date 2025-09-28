@@ -9,8 +9,8 @@ export default function NewsCard() {
     fetch(
       "https://corsproxy.io/?" +
         encodeURIComponent(
-          "https://news.google.com/rss/search?q=investments&hl=en-GB&gl=GB&ceid=GB:en"
-        )
+          "https://news.google.com/rss/search?q=investments&hl=en-GB&gl=GB&ceid=GB:en",
+        ),
     )
       .then((res) => res.text())
       .then((str) => {
@@ -45,7 +45,6 @@ export default function NewsCard() {
         <p className="text-gray-500 text-sm">No news available</p>
       )}
       {news.length > 0 && <NewsCarousel articles={news} />}
-
     </div>
   );
 }
