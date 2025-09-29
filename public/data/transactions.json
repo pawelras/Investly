@@ -7,7 +7,8 @@
     "quantity": 293,
     "price": 227.47,
     "amount": 66648.71,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "quantity": 124,
     "price": 408.76,
     "amount": 50686.24,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "quantity": 15,
     "price": 130.12,
     "amount": 1951.8,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "quantity": 45,
     "price": 99.66,
     "amount": 4484.7,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "quantity": 487,
     "price": 1.55,
     "amount": 754.85,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "quantity": 141,
     "price": 313.84,
     "amount": 44251.44,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "quantity": 485,
     "price": 0.86,
     "amount": 417.1,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "quantity": 239,
     "price": 308.68,
     "amount": 73774.52,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "quantity": 53,
     "price": 485.99,
     "amount": 25757.47,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "quantity": 298,
     "price": 350.74,
     "amount": 104520.52,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "quantity": 247,
     "price": 467.67,
     "amount": 115514.49,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "quantity": 110,
     "price": 1.75,
     "amount": 192.5,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "quantity": 49,
     "price": 414.74,
     "amount": 20322.26,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 14,
@@ -137,7 +150,8 @@
     "quantity": 248,
     "price": 252.73,
     "amount": 62677.04,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 15,
@@ -147,7 +161,8 @@
     "quantity": 278,
     "price": 90.51,
     "amount": 25161.78,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 16,
@@ -157,7 +172,8 @@
     "quantity": 182,
     "price": 451.13,
     "amount": 82105.66,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 17,
@@ -167,7 +183,8 @@
     "quantity": 402,
     "price": 1.88,
     "amount": 755.76,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 18,
@@ -177,7 +194,8 @@
     "quantity": 29,
     "price": 128.03,
     "amount": 3712.87,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 19,
@@ -187,7 +205,8 @@
     "quantity": 222,
     "price": 141.56,
     "amount": 31426.32,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 20,
@@ -197,7 +216,8 @@
     "quantity": 11,
     "price": 444.02,
     "amount": 4884.22,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 21,
@@ -207,7 +227,8 @@
     "quantity": 105,
     "price": 494.83,
     "amount": 51957.15,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 22,
@@ -217,7 +238,8 @@
     "quantity": 229,
     "price": 204.73,
     "amount": 46883.17,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 23,
@@ -227,7 +249,8 @@
     "quantity": 90,
     "price": 135.25,
     "amount": 12172.5,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 24,
@@ -237,7 +260,8 @@
     "quantity": 423,
     "price": 1.52,
     "amount": 642.96,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 25,
@@ -247,7 +271,8 @@
     "quantity": 243,
     "price": 292.77,
     "amount": 71143.11,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 26,
@@ -257,7 +282,8 @@
     "quantity": 214,
     "price": 62.8,
     "amount": 13439.2,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 27,
@@ -267,7 +293,8 @@
     "quantity": 304,
     "price": 2.43,
     "amount": 738.72,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 28,
@@ -277,7 +304,8 @@
     "quantity": 100,
     "price": 2.48,
     "amount": 248.0,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 29,
@@ -287,7 +315,8 @@
     "quantity": 433,
     "price": 0.64,
     "amount": 277.12,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 30,
@@ -297,7 +326,8 @@
     "quantity": 305,
     "price": 1.38,
     "amount": 420.9,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 31,
@@ -307,7 +337,8 @@
     "quantity": 148,
     "price": 5.64,
     "amount": 834.72,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 32,
@@ -317,7 +348,8 @@
     "quantity": 173,
     "price": 1.78,
     "amount": 307.94,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 33,
@@ -327,7 +359,8 @@
     "quantity": 109,
     "price": 30.96,
     "amount": 3374.64,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 34,
@@ -337,7 +370,8 @@
     "quantity": 424,
     "price": 2.18,
     "amount": 924.32,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 35,
@@ -347,7 +381,8 @@
     "quantity": 101,
     "price": 0.66,
     "amount": 66.66,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 36,
@@ -357,7 +392,8 @@
     "quantity": 209,
     "price": 1.33,
     "amount": 277.97,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 37,
@@ -367,7 +403,8 @@
     "quantity": 58,
     "price": 31.89,
     "amount": 1849.62,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 38,
@@ -377,7 +414,8 @@
     "quantity": 239,
     "price": 290.05,
     "amount": 69321.95,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 39,
@@ -387,7 +425,8 @@
     "quantity": 240,
     "price": 2.41,
     "amount": 578.4,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 40,
@@ -397,7 +436,8 @@
     "quantity": 15,
     "price": 212.99,
     "amount": 3194.85,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 41,
@@ -407,7 +447,8 @@
     "quantity": 495,
     "price": 1.23,
     "amount": 608.85,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 42,
@@ -417,7 +458,8 @@
     "quantity": 172,
     "price": 0.82,
     "amount": 141.04,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 43,
@@ -427,7 +469,8 @@
     "quantity": 8,
     "price": 114.3,
     "amount": 914.4,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 44,
@@ -437,7 +480,8 @@
     "quantity": 171,
     "price": 316.91,
     "amount": 54191.61,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 45,
@@ -447,7 +491,8 @@
     "quantity": 9,
     "price": 62.72,
     "amount": 564.48,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 46,
@@ -457,7 +502,8 @@
     "quantity": 275,
     "price": 2.11,
     "amount": 580.25,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 47,
@@ -467,7 +513,8 @@
     "quantity": 3,
     "price": 189.74,
     "amount": 569.22,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 48,
@@ -477,7 +524,8 @@
     "quantity": 215,
     "price": 203.77,
     "amount": 43810.55,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 49,
@@ -487,7 +535,8 @@
     "quantity": 66,
     "price": 494.09,
     "amount": 32609.94,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 50,
@@ -497,7 +546,8 @@
     "quantity": 226,
     "price": 259.98,
     "amount": 58755.48,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 51,
@@ -507,7 +557,8 @@
     "quantity": 136,
     "price": 0.83,
     "amount": 112.88,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 52,
@@ -517,7 +568,8 @@
     "quantity": 102,
     "price": 243.97,
     "amount": 24884.94,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 53,
@@ -527,7 +579,8 @@
     "quantity": 338,
     "price": 1.99,
     "amount": 672.62,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 54,
@@ -537,7 +590,8 @@
     "quantity": 297,
     "price": 388.78,
     "amount": 115467.66,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 55,
@@ -547,7 +601,8 @@
     "quantity": 279,
     "price": 491.55,
     "amount": 137142.45,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 56,
@@ -557,7 +612,8 @@
     "quantity": 289,
     "price": 437.22,
     "amount": 126356.58,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 57,
@@ -567,7 +623,8 @@
     "quantity": 223,
     "price": 417.06,
     "amount": 93004.38,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 58,
@@ -577,7 +634,8 @@
     "quantity": 153,
     "price": 46.15,
     "amount": 7060.95,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 59,
@@ -587,7 +645,8 @@
     "quantity": 146,
     "price": 2.5,
     "amount": 365.0,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 60,
@@ -597,7 +656,8 @@
     "quantity": 102,
     "price": 2.44,
     "amount": 248.88,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 61,
@@ -607,7 +667,8 @@
     "quantity": 141,
     "price": 374.8,
     "amount": 52846.8,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 62,
@@ -617,7 +678,8 @@
     "quantity": 185,
     "price": 0.78,
     "amount": 144.3,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 63,
@@ -627,7 +689,8 @@
     "quantity": 159,
     "price": 60.0,
     "amount": 9540.0,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 64,
@@ -637,7 +700,8 @@
     "quantity": 392,
     "price": 1.37,
     "amount": 537.04,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   },
   {
     "id": 65,
@@ -647,7 +711,8 @@
     "quantity": 269,
     "price": 7.2,
     "amount": 1936.8,
-    "account": "Trading Account"
+    "account": "Trading Account",
+    "currency": "USD"
   },
   {
     "id": 66,
@@ -657,7 +722,8 @@
     "quantity": 40,
     "price": 221.32,
     "amount": 8852.8,
-    "account": "Growth Portfolio"
+    "account": "Growth Portfolio",
+    "currency": "USD"
   },
   {
     "id": 67,
@@ -667,7 +733,8 @@
     "quantity": 31,
     "price": 302.93,
     "amount": 9390.83,
-    "account": "Income Portfolio"
+    "account": "Income Portfolio",
+    "currency": "USD"
   },
   {
     "id": 68,
@@ -677,7 +744,8 @@
     "quantity": 228,
     "price": 238.37,
     "amount": 54348.36,
-    "account": "Global Equity Fund"
+    "account": "Global Equity Fund",
+    "currency": "USD"
   },
   {
     "id": 69,
@@ -687,7 +755,8 @@
     "quantity": 52,
     "price": 381.99,
     "amount": 19863.48,
-    "account": "UK Index Tracker"
+    "account": "UK Index Tracker",
+    "currency": "GBP"
   },
   {
     "id": 70,
@@ -697,7 +766,8 @@
     "quantity": 170,
     "price": 362.18,
     "amount": 61570.6,
-    "account": "Technology Fund"
+    "account": "Technology Fund",
+    "currency": "USD"
   },
   {
     "id": 71,
@@ -707,7 +777,8 @@
     "quantity": 176,
     "price": 241.11,
     "amount": 42435.36,
-    "account": "Dividend Reinvestment"
+    "account": "Dividend Reinvestment",
+    "currency": "USD"
   },
   {
     "id": 72,
@@ -717,6 +788,7 @@
     "quantity": 228,
     "price": 2.2,
     "amount": 501.6,
-    "account": "Retirement Fund"
+    "account": "Retirement Fund",
+    "currency": "USD"
   }
 ]

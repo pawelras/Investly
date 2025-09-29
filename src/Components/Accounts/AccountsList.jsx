@@ -5,6 +5,7 @@ import {
   Typography,
   Button
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 // Import some example Material Icons (replace with what you prefer)
 import WarningIcon from "@mui/icons-material/Warning"; 
@@ -34,16 +35,17 @@ const riskStyles = {
 
 export default function AccountsList() {
   const [accounts, setAccounts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/data/accounts.json") // 🔹 update this path
+    fetch("/data/accounts.json") // 🔹 update this path if needed
       .then((res) => res.json())
       .then((data) => setAccounts(data.accounts))
       .catch((err) => console.error("Error loading accounts:", err));
   }, []);
 
   return (
-    <Box display="flex" flexDirection="column" gap={2} cl>
+    <Box display="flex" flexDirection="column" gap={2}>
       {accounts.map((acc) => {
         const risk = riskStyles[acc.riskLevel] || { color: "gray", icon: <WarningIcon /> };
 
@@ -89,8 +91,14 @@ export default function AccountsList() {
 
             {/* 5. Action button */}
             <Box>
-              <Button variant="contained" color="primary">
-                Go
+              <Button
+                variant="contained"
+                sx={{ backgroundColor: "#4F77A3", color: "white" }}
+                onClick={() =>
+                  navigate(`/transactions?account=${encodeURIComponent(acc.name)}`)
+                }
+              >
+                Transactions
               </Button>
             </Box>
           </Card>
