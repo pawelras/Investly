@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import InvestmentDataGrid from "../Shared/InvestmentDataGrid";
+import TileTitle from "../Shared/TileTitle";
 
 // Adjust the path to your transactions.json as needed
 const DATA_URL = "../../data/transactions.json";
@@ -24,11 +25,12 @@ const RecentTransactions = () => {
 
   return (
     <>
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <h3 className="text-sm font-semibold mb-2">Recent Transactions</h3>
-      </div>
+      </div> */}
 
-      <div style={{ height: 400, width: "100%" }}>
+      <div >
+        <TileTitle hidden={false} title="Recent Transactions" redirectUrl="/transactions" buttonLabel="View All" />
         <InvestmentDataGrid data={data} pageSize={data.length} hideFooter />
       </div>
     </>

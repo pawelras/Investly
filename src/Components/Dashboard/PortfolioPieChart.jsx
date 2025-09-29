@@ -6,6 +6,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import TileTitle from "../Shared/TileTitle"; 
 
 export default function PortfolioPieChart() {
   // Sample portfolio breakdown in %
@@ -21,9 +22,9 @@ export default function PortfolioPieChart() {
 
   return (
     <div className="w-full h-80">
-      <h3 className="text-sm font-semibold mb-2">Portfolio Mix</h3>
+      <TileTitle hidden={false}title="Portfolio Mix" redirectUrl="/holdings" buttonLabel="Details" />
       <ResponsiveContainer>
-        <PieChart margin={{ top: 20, bottom: 10 }}>
+        <PieChart margin={{  bottom: 10 }}>
           <Pie
             data={data}
             dataKey="value"

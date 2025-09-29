@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NewsCarousel from "./NewsCarousel";
+import TileTitle from "../Shared/TileTitle";
 
 export default function NewsCard() {
   const [news, setNews] = useState([]);
@@ -37,8 +38,8 @@ export default function NewsCard() {
   }, []);
 
   return (
-    <div className="rounded-lg p-4 flex flex-col justify-between">
-      <h3 className="text-sm font-semibold mb-4">Top Pick</h3>
+    <div className="rounded-lg  flex flex-col justify-between">
+      <TileTitle hidden={true} title="Top Pick" redirectUrl="/" buttonLabel="View All" />
 
       {loading && <p className="text-gray-500 text-sm">Loading news…</p>}
       {!loading && news.length === 0 && (

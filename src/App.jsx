@@ -4,6 +4,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import Holdings from "./Components/Holdings/Holdings";
 import Transactions from "./Components/Transactions/Transactions";
+import Accounts from "./Components/Accounts/Accounts";
 function App() {
   return (
     <>
@@ -14,10 +15,10 @@ function App() {
         >
           <TopBar />
 
-          <Routes>
+      <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/holdings" element={<Holdings />} />
-        {/* <Route path="/accounts" element={<Accounts />} /> */}
+        <Route path="/accounts" element={<Accounts />} />
         <Route path="/transactions" element={<Transactions />} />
       </Routes>
           

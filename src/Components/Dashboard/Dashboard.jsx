@@ -32,7 +32,7 @@ const Dashboard = () => {
         </div>
 
         {/* Row 2 right: Donut / Widget */}
-        <div className="row-span-1 bg-white rounded-lg p-4 shadow">
+        <div className="row-span-1 bg-white rounded-lg px-4 shadow">
           <WidgetCard />
         </div>
       </div>

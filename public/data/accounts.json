@@ -1,0 +1,84 @@
+{
+  "accounts": [
+    {
+      "name": "Dividend Reinvestment",
+      "type": "Reinvestment Plan",
+      "balance": 154320.55,
+      "currency": "USD",
+      "createdDate": "2020-03-15",
+      "lastActivity": "2025-09-23",
+      "riskLevel": "Conservative",
+      "holdingsCount": 42
+    },
+    {
+      "name": "Global Equity Fund",
+      "type": "Mutual Fund",
+      "balance": 327845.92,
+      "currency": "USD",
+      "createdDate": "2018-07-09",
+      "lastActivity": "2025-09-08",
+      "riskLevel": "Balanced",
+      "holdingsCount": 67
+    },
+    {
+      "name": "Growth Portfolio",
+      "type": "Portfolio",
+      "balance": 451209.33,
+      "currency": "USD",
+      "createdDate": "2019-01-22",
+      "lastActivity": "2025-09-18",
+      "riskLevel": "Aggressive",
+      "holdingsCount": 58
+    },
+    {
+      "name": "Income Portfolio",
+      "type": "Portfolio",
+      "balance": 218740.12,
+      "currency": "USD",
+      "createdDate": "2017-05-14",
+      "lastActivity": "2025-09-08",
+      "riskLevel": "Conservative",
+      "holdingsCount": 33
+    },
+    {
+      "name": "Retirement Fund",
+      "type": "Pension Fund",
+      "balance": 612395.77,
+      "currency": "USD",
+      "createdDate": "2015-09-01",
+      "lastActivity": "2025-09-02",
+      "riskLevel": "Balanced",
+      "holdingsCount": 89
+    },
+    {
+      "name": "Technology Fund",
+      "type": "Sector Fund",
+      "balance": 389122.48,
+      "currency": "USD",
+      "createdDate": "2021-02-10",
+      "lastActivity": "2025-09-05",
+      "riskLevel": "Aggressive",
+      "holdingsCount": 25
+    },
+    {
+      "name": "Trading Account",
+      "type": "Brokerage Account",
+      "balance": 124589.64,
+      "currency": "USD",
+      "createdDate": "2022-11-30",
+      "lastActivity": "2025-09-26",
+      "riskLevel": "High Risk",
+      "holdingsCount": 17
+    },
+    {
+      "name": "UK Index Tracker",
+      "type": "Index Fund",
+      "balance": 298774.25,
+      "currency": "GBP",
+      "createdDate": "2016-06-12",
+      "lastActivity": "2025-09-17",
+      "riskLevel": "Balanced",
+      "holdingsCount": 52
+    }
+  ]
+}
