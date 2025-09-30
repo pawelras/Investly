@@ -2,10 +2,8 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 
 const InvestmentDataGrid = ({ data = [], pageSize = 10, ...otherProps }) => {
-  // Use controlled pagination model with state
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize });
 
-  // Update pagination model if the passed pageSize prop changes
   useEffect(() => {
     setPaginationModel((prev) => ({ ...prev, pageSize }));
   }, [pageSize]);
@@ -18,30 +16,33 @@ const InvestmentDataGrid = ({ data = [], pageSize = 10, ...otherProps }) => {
           field: key,
           headerName: key.charAt(0).toUpperCase() + key.slice(1),
           flex: 1,
+          minWidth: 120, // ✅ ensures readability on mobile
         }));
     }
     return [];
   }, [data]);
 
-  // Ensure the current pageSize is included in the rowsPerPageOptions
   const defaultOptions = [10, 25, 50];
   const pageSizeOptions = defaultOptions.includes(paginationModel.pageSize)
     ? defaultOptions
     : [paginationModel.pageSize, ...defaultOptions].sort((a, b) => a - b);
 
   return (
-    <div style={{ maxheight: 800, width: '100%', height: 'auto' }}>
-      <DataGrid
-        rows={data}
-        columns={columns}
-        getRowId={(row) => row.id}
-        pagination
-        paginationModel={paginationModel}
-        onPaginationModelChange={setPaginationModel}
-        rowsPerPageOptions={pageSizeOptions}
-        rowCount={data.length}
-        {...otherProps}
-      />
+    <div className="w-full max-h-[800px] h-auto overflow-x-auto">
+      <div className="min-w-[600px]"> {/* ✅ gives grid breathing room on mobile */}
+        <DataGrid
+          rows={data}
+          columns={columns}
+          getRowId={(row) => row.id}
+          pagination
+          paginationModel={paginationModel}
+          onPaginationModelChange={setPaginationModel}
+          rowsPerPageOptions={pageSizeOptions}
+          rowCount={data.length}
+          autoHeight
+          {...otherProps}
+        />
+      </div>
     </div>
   );
 };

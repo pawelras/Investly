@@ -32,6 +32,7 @@ const TransactionsGrid = () => {
               field: key,
               headerName: key.charAt(0).toUpperCase() + key.slice(1),
               flex: 1,
+              minWidth: 120,
             }));
           setColumns(cols);
 
