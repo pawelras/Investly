@@ -51,7 +51,7 @@ const TransactionsGrid = () => {
   }, [accountName]);
 
   return (
-    <div style={{ height: 700, width: '100%' }}>
+    <div style={{ height: 600, width: '100%' }}>
       {accountName && (
         <Box
           display="flex"
