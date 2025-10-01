@@ -1,9 +1,8 @@
-// netlify/functions/stock.js
+import yahooFinance from "yahoo-finance2";
 
 export async function handler(event) {
   try {
     const { symbol } = event.queryStringParameters;
-
     if (!symbol) {
       return {
         statusCode: 400,
@@ -11,10 +10,6 @@ export async function handler(event) {
       };
     }
 
-    // ✅ Dynamic import works in CJS + ESM
-    const yahooFinance = (await import("yahoo-finance2")).default;
-
-    // Fetch historical quotes
     const quotes = await yahooFinance.historical(symbol, {
       period1: "2024-01-01",
       interval: "1d",
