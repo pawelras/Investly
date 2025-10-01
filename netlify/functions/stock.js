@@ -1,4 +1,4 @@
-import yahooFinance from "yahoo-finance2";
+// netlify/functions/stock.js
 
 export async function handler(event) {
   try {
@@ -11,17 +11,21 @@ export async function handler(event) {
       };
     }
 
-    // ✅ Use historical API (instead of chart)
-    const result = await yahooFinance.historical(symbol, {
-      period1: "2024-01-01", // start date
-      interval: "1d",        // daily candles
+    // ✅ Dynamic import works in CJS + ESM
+    const yahooFinance = (await import("yahoo-finance2")).default;
+
+    // Fetch historical quotes
+    const quotes = await yahooFinance.historical(symbol, {
+      period1: "2024-01-01",
+      interval: "1d",
     });
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ quotes: result }),
+      body: JSON.stringify({ quotes }),
     };
   } catch (err) {
+    console.error("Stock function error:", err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: err.message }),
