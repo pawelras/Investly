@@ -9,12 +9,15 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 
-export default function Top10HoldingsChart() {
+export default function Top10HoldingsChart({ onSelectSecurity }) {
   const [data, setData] = useState([]);
+  const [snackbarMessage, setSnackbarMessage] = useState(null);
 
   useEffect(() => {
-    fetch("../data/holdings.json")
+    fetch("/data/holdings.json") // ✅ safer path for vite/netlify public folder
       .then((res) => res.json())
       .then((json) => setData(json))
       .catch((err) => console.error("Error loading holdings:", err));
@@ -33,7 +36,6 @@ export default function Top10HoldingsChart() {
     "#FFD6CC",
   ];
 
-  // detect screen width for responsive tweaks
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
@@ -41,6 +43,9 @@ export default function Top10HoldingsChart() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // show snackbar
+  const showToast = (msg) => setSnackbarMessage(msg);
 
   return (
     <div className="bg-white rounded-lg p-4 shadow">
@@ -60,7 +65,7 @@ export default function Top10HoldingsChart() {
                 angle={-30}
                 textAnchor="end"
                 interval={0}
-                height={isDesktop ? 100 : 60} // 👈 more space on desktop
+                height={isDesktop ? 100 : 60}
                 tick={{ fontSize: isDesktop ? 13 : 11 }}
               />
               <YAxis />
@@ -76,6 +81,14 @@ export default function Top10HoldingsChart() {
                   <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
+                    cursor={entry.symbol ? "pointer" : "default"}
+                    onClick={() => {
+                      if (entry.symbol) {
+                        onSelectSecurity?.(entry.symbol);
+                      } else {
+                        showToast(`${entry.name} is not a tradable security`);
+                      }
+                    }}
                   />
                 ))}
               </Bar>
@@ -87,34 +100,64 @@ export default function Top10HoldingsChart() {
         <div className="w-full md:w-[40%] flex flex-col justify-center">
           <h3 className="text-md font-semibold mb-2 text-gray-600">Holdings</h3>
           <ul className="space-y-2 text-sm">
-            {data.map((item, index) => (
-              <li
-                key={item.id}
-                className="grid grid-cols-[1fr_auto_auto] items-center gap-4"
-              >
-                {/* Color + Name */}
-                <span className="flex items-center">
-                  <span
-                    className="inline-block w-3 h-3 mr-2 rounded"
-                    style={{ backgroundColor: COLORS[index % COLORS.length] }}
-                  ></span>
-                  {item.name}
-                </span>
+            {data.map((item, index) => {
+              const symbol =
+                item.symbol || item.name.match(/\(([^)]+)\)/)?.[1] || null;
 
-                {/* Percentage */}
-                <span className="text-gray-600 text-right w-12">
-                  {item.percentage}%
-                </span>
+              return (
+                <li
+                  key={item.id || index}
+                  className="grid grid-cols-[1fr_auto_auto] items-center gap-4 cursor-pointer hover:bg-gray-50 p-1 rounded"
+                  onClick={() => {
+                    if (symbol) {
+                      onSelectSecurity?.(symbol);
+                    } else {
+                      showToast(`${item.name} is not a tradable security`);
+                    }
+                  }}
+                >
+                  <span className="flex items-center">
+                    <span
+                      className="inline-block w-3 h-3 mr-2 rounded"
+                      style={{ backgroundColor: COLORS[index % COLORS.length] }}
+                    ></span>
+                    {item.name}
+                  </span>
 
-                {/* Value */}
-                <span className="font-medium text-right">
-                  £{item.value.toLocaleString()}
-                </span>
-              </li>
-            ))}
+                  <span className="text-gray-600 text-right w-12">
+                    {item.percentage}%
+                  </span>
+
+                  <span className="font-medium text-right">
+                    £{item.value.toLocaleString()}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
+
+      {/* Snackbar for info messages */}
+      <Snackbar
+        open={!!snackbarMessage}
+        autoHideDuration={3000}
+        onClose={() => setSnackbarMessage(null)}
+         anchorOrigin={{ vertical: "top", horizontal: "center" }}
+  sx={{
+    top: "50% !important",
+    transform: "translateY(-50%)"
+  }}
+      >
+        <MuiAlert
+          onClose={() => setSnackbarMessage(null)}
+          severity="info"
+          elevation={6}
+          variant="filled"
+        >
+          {snackbarMessage}
+        </MuiAlert>
+      </Snackbar>
     </div>
   );
 }

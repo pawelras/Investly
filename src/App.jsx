@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Holdings from "./Components/Holdings/Holdings";
 import Transactions from "./Components/Transactions/Transactions";
 import Accounts from "./Components/Accounts/Accounts";
+
 function App() {
   return (
     <>
