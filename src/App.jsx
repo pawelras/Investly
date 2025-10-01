@@ -1,5 +1,5 @@
 import "./App.css";
-import TopBar from "./Components/Dashboard/TopBar";
+import TopBar from "./Components/Accounts/Header/TopBar";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import Holdings from "./Components/Holdings/Holdings";
