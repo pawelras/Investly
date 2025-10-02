@@ -19,7 +19,7 @@ export default function TopBar() {
         <div style={{ letterSpacing: "1px" }} className="text-4xl font-bold"><img width="300" src={logo} alt="Investly Logo" /></div>
 
         {/* Navigation */}
-        <div className="flex flex-col md:flex-row md:space-x-6 text-md gap-2 md:gap-0 mt-2 md:mt-0">
+        <div className="flex  md:flex-row md:space-x-6 text-md gap-2 md:gap-0 mt-2 md:mt-0 justify-between">
           <NavLink
             to="/"
             style={{ letterSpacing: "1px" }}
