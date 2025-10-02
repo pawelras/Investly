@@ -1,7 +1,8 @@
-import NotificationsPopover from "../../Dashboard/NotificationsPopover";
+import NotificationsPopover from "../Dashboard/NotificationsPopover";
 import { NavLink } from "react-router-dom";
 import StockTicker from "./StockTicker";
 import Ticker from "./Ticker";
+import logo from '../../assets/logo.png';
 
 export default function TopBar() {
   return (
@@ -15,7 +16,7 @@ export default function TopBar() {
       {/* Row 2: logo + nav */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-0">
         {/* Logo */}
-        <div style={{ letterSpacing: "1px" }} className="text-4xl font-bold">Investly</div>
+        <div style={{ letterSpacing: "1px" }} className="text-4xl font-bold"><img width="300" src={logo} alt="Investly Logo" /></div>
 
         {/* Navigation */}
         <div className="flex flex-col md:flex-row md:space-x-6 text-md gap-2 md:gap-0 mt-2 md:mt-0">
@@ -23,34 +24,31 @@ export default function TopBar() {
             to="/"
             style={{ letterSpacing: "1px" }}
             className={({ isActive }) =>
-              isActive ? "underline font-semibold" : "hover:underline"
+              isActive ? "underline font-semibold tracking-[1px]" : "hover:underline tracking-[1px]"
             }
             >
             Dashboard
           </NavLink>
           <NavLink
             to="/holdings"
-            style={{ letterSpacing: "1px" }}
             className={({ isActive }) =>
-              isActive ? "underline font-semibold" : "hover:underline"
+              isActive ? "underline font-semibold tracking-[1px]" : "hover:underline tracking-[1px]"
             }
           >
             Holdings
           </NavLink>
           <NavLink
             to="/accounts"
-            style={{ letterSpacing: "1px" }}
             className={({ isActive }) =>
-              isActive ? "underline font-semibold" : "hover:underline"
+              isActive ? "underline font-semibold tracking-[1px]" : "hover:underline tracking-[1px]"
             }
           >
             Accounts
           </NavLink>
           <NavLink
             to="/transactions"
-            style={{ letterSpacing: "1px" }}
             className={({ isActive }) =>
-              isActive ? "underline font-semibold" : "hover:underline"
+              isActive ? "underline font-semibold tracking-[1px]" : "hover:underline tracking-[1px]"
             }
           >
             Transactions

@@ -7,7 +7,7 @@ import RecentTransactions from "./RecentTransactions";
 
 const Dashboard = () => {
   return (
-    <div className='bg-light my-10 px-5 lg:px-50'>
+    <div className='bg-light mb-10 px-5 lg:px-50'>
       <h2 className="text-4xl font-bold mb-4 text-gray-600">Dashboard</h2>
 
       {/* KPI row stays outside grid */}

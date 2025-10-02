@@ -1,5 +1,5 @@
 import "./App.css";
-import TopBar from "./Components/Accounts/Header/TopBar";
+import TopBar from "./Components/Header/TopBar";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import Holdings from "./Components/Holdings/Holdings";
@@ -16,16 +16,12 @@ function App() {
         >
           <TopBar />
 
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/holdings" element={<Holdings />} />
-        <Route path="/accounts" element={<Accounts />} />
-        <Route path="/transactions" element={<Transactions />} />
-      </Routes>
-          
-        
-          
-          
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/holdings" element={<Holdings />} />
+            <Route path="/accounts" element={<Accounts />} />
+            <Route path="/transactions" element={<Transactions />} />
+          </Routes>
         </div>
       </div>
     </>
